@@ -1,6 +1,8 @@
 	<div class="login">
+		<h2>Login</h2>
 		<?php 
 			echo form_open('main/login');
+			echo '<div class="loginErrors">' . validation_errors() . '</div>';
 			echo form_label("Email: ", "email");
 			$data = array(
 				"name" => "email",
