@@ -8,6 +8,7 @@ class Dashboard extends CI_Controller {
 		{
 			$data['title'] = "Dashboard | Sharman's Cab Company";
 			$this->load->view('site_header', $data);
+			$this->load->view('dashboard_header');
 			$this->load->view('view_dashboard');
 		}
 		else {
