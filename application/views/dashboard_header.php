@@ -1,8 +1,10 @@
+	<!-- Contains all the elements that are common to the dashboard pages-->
 	<div class="nav">
-		<a href="dashboard/logout">Logout</a>
+		<a href="<?php echo base_url(); ?>dashboard">Dashboard</a> | <a href="<?php echo base_url(); ?>dashboard/logout">Logout</a>
 	</div>
 	<div class="wrapper">
 		<div class="sidebar">
+			<!-- The accordion menu on the left-->
 			<div id="sidebar">
 				<h3><img src="<?php echo base_url(); ?>images/bookings.png"> Bookings</h3>
 				<div>
@@ -18,7 +20,7 @@
 				<h3><img src="<?php echo base_url(); ?>images/customers.png"> Customers</h3>
 				<div>
 					<p><a href="<?php echo base_url() ?>customers/add">New customer</a></p>
-					<p><a href="<?php echo base_url() ?>customers/manage">Manage customer</a></p>
+					<p><a href="<?php echo base_url() ?>customers/manage">Manage customers</a></p>
 				</div>
 				<h3><img src="<?php echo base_url(); ?>images/accounts.png"> Accounts</h3>
 				<div>
